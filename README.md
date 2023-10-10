@@ -15,3 +15,5 @@ Este é um aplicativo de calculadora simples criado usando HTML, CSS e JavaScrip
    ```bash
    git clone https://github.com/seu-usuario/calculadora-simples.git
    ```
+
+   https://deborasm.github.io/calculadora/
