@@ -15,3 +15,10 @@ function calculateResult() {
         display.value = 'Erro';
     }
 }
+let isDarkTheme = false;
+
+function toggleTheme() {
+    const body = document.body;
+    isDarkTheme = !isDarkTheme;
+    body.className = isDarkTheme ? 'dark-theme' : 'light-theme';
+}

@@ -1,18 +1,27 @@
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color:  #f0f0f0;
 }
+/* Estilos para o título */
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin:  2px 5px 15px 0px ; 
+}
+
 
 .calculator {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid #0835ff;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
@@ -21,6 +30,7 @@ input[type="text"] {
     font-size: 24px;
     text-align: right;
     margin-bottom: 10px;
+   
 }
 
 .buttons {
@@ -41,4 +51,33 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Estilos para o botão de alterar tema */
+.theme-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1; /* Garante que o botão esteja acima do conteúdo da calculadora */
+}
+
+/* Estilos para o botão de alterar tema quando o tema estiver escuro */
+.dark-theme .theme-button {
+    background-color: #333;
 }
